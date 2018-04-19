@@ -1,0 +1,62 @@
+{
+    "name":"dinfi2/junior",
+    "type":"library",
+    "description":"junior package",
+    "keywords":[
+        "junior"
+    ],
+    "homepage":"https://github/dinfi2/junior",
+    "license":"proprietary",
+    "authors": [
+        {
+            "name":"mirko",
+            "email":"bukela@gmail.com",
+            "homepage": "https://mirko.com",
+            "role":"developer"
+        },
+        {
+            "name":"marija",
+            "email":"marija@gmail.com",
+            "homepage": "https://marija.com",
+            "role":"developer"
+        }
+    ],
+    "require": {
+        "php":"^7.1.3"
+    },
+    "repositories": [
+        {
+        "type":"git",
+        "url":"git@github.com:bukela/dinfi2-junior.git"
+        }
+    ],
+    "require-dev": {
+        "php/phpunit":">=5.4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dinfi2\\Junior\\":"src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dinfi2\\Junior\\":"test"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dinfi2\\Junior\\JuniorServiceProvider"
+            ],
+            "aliases": {
+                "Junior": "Dinfi2\\Junior\\JuniorFacade"
+            }
+        }
+    },
+    "prefer-stable":true,
+    "minimum-stability":"dev",
+    "config": {
+        "sort-package":true
+    }
+
+}
